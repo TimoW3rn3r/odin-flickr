@@ -74,3 +74,5 @@ end
 # flickr api gem
 gem 'flickr', '~> 2.1'
 
+gem 'figaro'
+
