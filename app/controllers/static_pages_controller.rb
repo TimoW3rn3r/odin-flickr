@@ -6,7 +6,12 @@ class StaticPagesController < ApplicationController
     end
 
     flickr = ApplicationController::FLICKR
-    photos_info = flickr.people.getPhotos(user_id: params[:flickr_id])
+    user_id = params[:flickr_id]
+    photos_info = flickr.people.getPhotos(user_id:)
+
+    user_info = flickr.people.getInfo(user_id:)
+    @realname = user_info.realname
+    @user_photos = user_info.photosurl
     @photos = photos_info.map { |photo| Flickr.url_z(photo) }
   end
 end
