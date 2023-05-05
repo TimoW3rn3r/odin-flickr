@@ -72,5 +72,5 @@ group :test do
 end
 
 # flickr api gem
-gem 'flickr', '~> 2.0', '>= 2.0.2'
+gem 'flickr', '~> 2.1'
 
