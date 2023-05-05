@@ -70,3 +70,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+# flickr api gem
+gem 'flickr', '~> 2.0', '>= 2.0.2'
+
