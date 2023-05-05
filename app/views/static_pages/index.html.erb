@@ -4,3 +4,15 @@
   <%= form.label :flickr_id, "Flickr ID" %>
   <%= form.text_field :flickr_id %>
 <% end %>
+
+<% if @photos.any? %>
+
+  <div class="container">
+    <% @photos.each do |photo| %>
+      <div class="item">
+        <img src="<%= photo %>" alt="">
+      </div>
+    <% end %>
+  </div>
+
+<% end %>
